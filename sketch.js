@@ -14,6 +14,7 @@ function setup(){
   b4=createSprite(62.5,492,125,15);
   b4.shapeColor="orange";
   edges=createEdgeSprites();
+    box.bounceOff(edges);
   
 }
 function draw(){
@@ -44,7 +45,7 @@ function draw(){
     box.shapeColor=b4.shapeColor;
     bounceOff(box,b4);
   }
-  box.bounceOff(edges);
+
   
   
   
