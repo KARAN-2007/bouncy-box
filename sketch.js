@@ -14,14 +14,14 @@ function setup(){
   b4=createSprite(62.5,492,125,15);
   b4.shapeColor="orange";
   edges=createEdgeSprites();
-    box.bounceOff(edges);
+   
   
 }
 function draw(){
   background("black");
  // box.y=mouseY;
  // box.x=mouseX;
-  
+   box.bounceOff(edges);
   
   
   if(isTouching(box,b1) ){
