@@ -44,7 +44,7 @@ function draw(){
     box.shapeColor=b4.shapeColor;
     bounceOff(box,b4);
   }
-  
+  box.bounceOff(edges);
   
   
   
