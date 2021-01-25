@@ -23,32 +23,32 @@ function draw(){
   
   
   
-  if(isTouching(box,b1)&& bounceOff(box,b1)){
+  if(isTouching(box,b1) ){
     
     box.shapeColor=b1.shapeColor;
+     bounceOff(box,b1)
     
   }
   if(isTouching(box,b2)){
-   
+    bounceOff(box,b2);
     box.shapeColor=b2.shapeColor;
   
   }
   if(isTouching(box,b3)){
-   
+    bounceOff(box,b3);
     box.shapeColor=b3.shapeColor;
     
   }
   if(isTouching(box,b4)){
    
     box.shapeColor=b4.shapeColor;
-    box.velocityX=0;
-    box.velocityY=0;
+    bounceOff(box,b4);
   }
   
   
   
-  bounceOff(box,b2);
-  bounceOff(box,b3);
+  
+  
   
   drawSprites()
 }
